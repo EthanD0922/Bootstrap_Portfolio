@@ -4,6 +4,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
+<style>
+    body {
+      background-image: url(light-grey-terrazzo/light-grey-terrazzo.png);
+    }
+  </style>
 
 <body>
 
@@ -16,8 +21,29 @@
     </nav>
   </header>
 
-  <div class="container w-75 d-flex align-items-center mt-lg-5">
-    <div class="mt-lg-5 border p-lg-4 " style ="border-color:#dddddd;">
+  <div class="container d-flex justify-content-center mt-lg-5">
+    <div class="mt-lg-5 border p-lg-4 col-lg-12 " style ="border-color:#dddddd;background-color: #ffffff">
+    
+          <div class="border-bottom mb-3">
+              <h1 class="p-lg-4" style="color:#4aaaa5; font-family: 'Georgia', Times, Times New Roman, serif; ">Contact</h1>
+          </div>
+        <form action="/action_page.php">
+            <label for="name">Name:</label>
+            <br>
+            <input class="w-100" type="text" id="name" name="name" placeholder="Your name..">
+            <br>
+            <label for="email">E-mail:</label>
+            <br>
+            <input class="w-100" type="text" id="email" name="email" placeholder="example@site.com">
+            <br>
+            <label for="message">Message:</label>
+            <br>
+            <textarea class="w-100" id="message" name="message" style="height:200px"></textarea>
+            <br>
+            <input type="submit" value="Submit" class="submit">
+            <br>
+            </form>
+          </div>
     </div>
   </div>
 </body>
